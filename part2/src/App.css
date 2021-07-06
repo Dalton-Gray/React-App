@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #243754;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #ebebeb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #1DA1F2;
+}
+
+
+.Author {
+  background-color: #243754;
+  border: 1px solid #243754;
+  border-radius: 7px;
+  border-width: 0.3rem;
+  margin: 1rem;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 6%;
+}
+
+
+.logo {
+  width: 155px;
+  height: 117.5px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+  padding-right: 45px;
+  float: left;
+}
+
+/* Collapsible List CSS */
+
+.collapsible {
+  text-align: center;
+  background-color: #243754;
+  color: white;
+  cursor: pointer;
+  padding: 1.2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.active,
+.collapsible:hover {
+  color:#1DA1F2;
+}
+
+.content {
+  text-align: center;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #777;
+  margin: 0;
+  width: 100%;
+}
+
+.content2 {
+  text-align: center;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #ebebeb;
+}
+
+.content3 {
+  text-align: center;
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Form CSS */
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  margin: 0.5rem;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+button {
+  background-color: #337ab7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+select {
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.updateButton {
+  width: 60%;
+  background-color: #00B74A;
+}
+
+.logoutButton {
+  background-color: #F93154;
+}
+
+.loginButton {
+  background-color: #337ab7;
+}
+
+.loginForm {
+  width: 33%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  nav li {
+    text-align: center;
+    float: none;
+  }
+}
